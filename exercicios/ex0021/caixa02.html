@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agrupamento de Tags</title>
+    <style>
+
+        body{
+            background-color: rgb(169, 170, 169);
+            font-family: Arial, sans-serif;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+
+        nav{
+            margin-right: 15px;
+            text-decoration: none;
+            background-color: rgb(187, 186, 186);
+            padding: 5px;
+            box-shadow: 2px 3px 1px #0000005c
+        }
+
+        nav > a{
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+        }
+
+        nav > a:hover{
+            text-decoration: underline;
+            color: blue;
+        }
+
+        main{
+            padding: 10px;
+            margin: 10px;
+            background-color: white;
+        }
+        
+        article{
+            background-color: rgb(211, 210, 210);
+            padding: 5px;
+        }
+
+        article > aside{
+            background-color:  rgb(170, 169, 169);
+        }
+
+        footer{
+            background-color: black;
+            color: white;
+            padding: 4px;
+            text-align: center;
+            margin: 0px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+            <a href="#">Home</a>
+            <a href="file:///C:/Users/Samsung/OneDrive/Documentos/ESTUDOS/html%20css/exercicios/eu/euu/index.html" target="_blank">Sobre</a>
+            <a href="https://www.linkedin.com/in/jo%C3%A3o-victor-kim-5b531524a/" target="_blank">Contato</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+
+        </section>
+        <section id="notícias">
+            <article>
+                <h2>Notícia 1</h2>
+                <p>Antigamente não podia usar tags de agrupamento uma dentro da outra, essa atualização para o HTML5 nos permitiu organizarmos desta forma</p>
+            </article>
+            <article>
+                <aside>
+                    <p>Artigo escrito por José da Silva. 😂</p>
+                </aside>
+            </article>
+        </section>
+        <h2>Bem-vindo ao meu site!</h2>
+        <p>Este é um exemplo de agrupamento de tags usando header, nav, main e footer - são como as "div", só que são especiais, porque têm significado semântico, o que chamamos de tags de agrupamento.</p>
+    </main>
+    <footer>
+        <p>Desenvolvido por João Victor Kim</p>
+    </footer>
+</body>
+</html>

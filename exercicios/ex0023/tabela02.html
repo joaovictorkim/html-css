@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+
+        table {
+            width: 300px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        th, td {
+            border: 1px solid #000;
+            padding: 8px;
+            text-align: left;
+        }
+
+        caption {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+            font-weight: bolder;
+            padding: 10px;
+            background-color: lightgrey;
+        }
+
+        thead{
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: 0;
+            background-color: gray;
+        }
+
+        tbody > tr:nth-child(even) {
+            background-color: lightgray;
+
+        }
+
+        tfoot{
+            background-color: gray;
+            color: white;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .exemplo {
+            margin-top: 20px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes.</h1>
+    <!--
+        Anatomia para tabelas grandes:
+        Table
+            THEAD
+            TR, TD, TH
+            TBODY
+            TR, TD, TH
+            TFOOT
+            TR, TD, TH
+    -->
+
+    <caption>População dos Estados Brasileiros</caption>
+    <table>
+        <thead>
+            <tr>
+                <th>Estado</th>
+                <th>População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">46.081.801</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td class="num">21.393.441</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td class="num">17.366.189</td>
+            </tr>
+            <tr>
+                <td>Bahia</td>
+                <td class="num">14.930.634</td>
+            </tr>
+            <tr>
+                <td>Paraná</td>
+                <td class="num">11.597.484</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Sul</td>
+                <td class="num">11.422.973</td>
+            </tr>
+             <tr>
+                <td>Pernambuco</td>
+                <td class="num">9.616.621</td>
+            </tr>
+            <tr>
+                <td>Ceará</td>
+                <td class="num">9.240.580</td>
+            </tr>
+            <tr>
+                <td>Pará</td>
+                <td class="num">8.690.745</td>
+            </tr>
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">4.269.995</td>
+            </tr>
+            <tr>
+                <td>Espírito Santo</td>
+                <td class="num">4.064.052</td>  
+            </tr>
+            <tr>
+                <td>Paraíba</td>
+                <td class="num">4.039.277</td>
+            </tr>
+            <tr>
+                <td>Rio Grande do Norte</td>
+                <td class="num">3.534.165</td>
+            </tr>
+            <tr>
+                <td>Alagoas</td>
+                <td class="num">3.351.543</td>
+            </tr>
+            <tr>
+                <td>Piauí</td>
+                <td class="num">3.281.480</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso</td>
+                <td class="num">3.526.220</td>
+            </tr>
+            <tr>
+                <td>Mato Grosso do Sul</td>
+                <td class="num">2.809.394</td>
+            </tr>
+            <tr>
+                <td>Goiás</td>
+                <td class="num">7.113.540</td>
+            </tr>
+            <tr>
+                <td>Distrito Federal</td>
+                <td class="num">3.094.325</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Total de habitantes</td>
+                <td class="num"><strong>150.000.000</strong></td>
+            </tr>
+    </table>
+    <p class="exemplo">Os parágrafos abaixo serão gerados por "lorem" para demonstrar o exemplo de fixar o cabeçalho da tabela.</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Numquam magni, cupiditate, ad fugiat tempore aliquam totam sapiente vel pariatur quo corporis dolore. Dolorum ratione rem recusandae laudantium doloribus accusamus. Alias! Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum saepe culpa id quia laboriosam expedita aspernatur at, ipsum incidunt facere quam minima sint soluta suscipit quos quidem repudiandae consequatur quis!lore
+    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Pariatur, optio ipsa obcaecati minus dolores repellendus voluptas nihil voluptate dolore consectetur laudantium ex tempore magni fuga dolor ratione, ab, quis harum!</p>
+</body>
+</html>

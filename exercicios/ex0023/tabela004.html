@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercícios de tabelas</title>
+    <style>
+        table {
+            border-collapse: collapse;
+            width: 50%;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 3px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Grupos</th>
+                <th scope="col">Nomes</th>
+                <th colspan="3" scope="colgroup">Filmes</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Mulheres</th>
+                <td>Ana Maria</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Matrix</td>
+                <td>Interestelar</td>
+                <td>Capitão América</td>
+            </tr>
+            <tr>
+                <td>Catarina Silva</td>
+                <td>Gladiador</td>
+                <td>Parasita</td>
+                <td>Black Panther</td>
+            </tr>
+            <tr>
+                <th rowspan="3" scope="rowgroup">Homens</th>
+                <td>Diego Silva</td>
+                <td>O Poderoso Chefão</td>
+                <td>Clube da Luta</td>
+                <td>O Senhor dos Anéis</td>
+            </tr>
+            <tr>
+                <td>Eduardo Costa</td>
+                <td>Star Wars</td>
+                <td>O Hobbit</td>
+                <td>Harry Potter</td>
+            </tr>
+            <tr>
+                <td>Felipe Almeida</td>
+                <td>Jurassic Park</td>
+                <td>O Exterminador do Futuro</td>
+                <td>Matrix</td>
+            </tr>
+
+        </tbody>
+    </table>
+</body>
+</html>
